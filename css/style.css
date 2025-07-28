@@ -1,0 +1,242 @@
+@charset "utf-8";
+.flex {
+  display: flex;
+}
+.inner {
+  padding: 0 40px;
+}
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+}
+.gnb {
+  width: 100%;
+}
+.gnb ul {
+  justify-content: space-around;
+}
+.gnb li a {
+  display: block;
+  padding: 20px;
+}
+.gnb li a:hover {
+  color: var(--point-color);
+  animation: moveTop 2s linear infinite;
+}
+@keyframes moveTop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.mainVisual {
+  position: relative;
+  width: 100%;
+}
+.mainVisual .bg {
+  content: "";
+  display: block;
+  background-image: url(../images/laptop.png), url(../images/main_bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%, 50% 50%;
+  background-size: 400px 250px, cover;
+  margin: 0 auto;
+  width: 100%;
+  height: 900px;
+}
+.textContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+.designer {
+  position: absolute;
+  top: 25%;
+  left: 13%;
+  content: "";
+  display: block;
+  background: url(../images/designer.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 50rem;
+  height: 30rem;
+}
+.publisher {
+  position: absolute;
+  top: 60%;
+  left: 8%;
+  content: "";
+  display: block;
+  background: url(../images/publisher.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 57rem;
+  height: 30rem;
+}
+
+section {
+  height: 1000px;
+}
+.about {
+  background: url(../images/gradient.png) no-repeat 0 0;
+  background-size: 100%;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  align-items: start;
+  width: 100%;
+  max-width: 110rem;
+  gap: 18%;
+}
+.content .img {
+  width: 30%;
+  height: auto;
+}
+.info {
+  flex-direction: column;
+  gap: 3rem;
+}
+.info h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.info p {
+  line-height: 22px;
+}
+.info .text p ~ p {
+  margin-top: 20px;
+}
+.skills {
+  justify-content: space-between;
+  width: 100%;
+  gap: 3%;
+  margin-bottom: 20px;
+}
+.skills img {
+  height: 60px;
+}
+
+.projects {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(../images/pj_bg.png) no-repeat 0 80%;
+  background-size: 100%;
+}
+.inner {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contents {
+  width: 100rem;
+  height: 20rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.contents .tab-header {
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 55px 0;
+  gap: 30px;
+}
+.contents .tab-header > div {
+  width: auto;
+  padding: 10px 15px;
+  font-size: 2.1rem;
+  color: #007375;
+  text-align: center;
+  cursor: pointer;
+}
+.contents .tab-header > div.active {
+  font-weight: bold;
+  color: #fff;
+  background-color: #f82f2f;
+  border-radius: 30px;
+}
+.contents .tab-body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.contents .tab-body > div {
+  position: absolute;
+  top: -200%;
+}
+.contents .tab-body > div.active {
+  top: 0px;
+}
+.projects .monitor img {
+  margin-bottom: 60px;
+  width: 50rem;
+  height: auto;
+}
+.projects .monitor img:hover {
+  cursor: pointer;
+}
+.projects .notice {
+  color: #888;
+}
+
+.contact {
+  padding-top: 150px;
+  background: url(../images/cntc_bg.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 100%;
+  height: 800px;
+}
+.contact .name {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.contact .mail {
+  font-size: 10rem;
+  color: var(--main-color);
+  margin-bottom: 35px;
+}
+.contact .mail:hover {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: var(--point-color);
+}
+.contact .sns {
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .github span {
+  background: url(../images/github.png) no-repeat 0 0;
+}
+.contact .insta span {
+  background: url(../images/instagram.png) no-repeat 0 0;
+}
+.contact .sns span {
+  content: "";
+  display: block;
+  background-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+}
+.footer {
+  padding-bottom: 30px;
+  color: #1f1f1f;
+  background-color: #a4dee0;
+}
