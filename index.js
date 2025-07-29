@@ -52,13 +52,13 @@ $(document).ready(function () {
       $(".tab-header > div.active")
     );
 
-    let urls = [
-      "https://www.hansolhomedeco.com/",
-      "https://www.lgcare.com/",
-      "https://www.hansolkids.org/",
-      "https://flyasiana.com/",
-      "https://www.ekdp.com/",
-    ];
+    // let urls = [
+    //   "https://www.hansolhomedeco.com/",
+    //   "https://www.lgcare.com/",
+    //   "https://www.hansolkids.org/",
+    //   "https://flyasiana.com/",
+    //   "https://www.ekdp.com/",
+    // ];
     window.open(urls[activeIndex], "_blank");
   });
 }); //ready
